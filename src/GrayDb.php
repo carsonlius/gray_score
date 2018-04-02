@@ -17,7 +17,7 @@ class GrayDb
     {
         // 加载配置文件
         $file_name_config = __DIR__ . '/../config/config_prod.php';
-        if (defined(ENV)) {
+        if (defined('ENV')) {
             $file_name_config =  __DIR__ . '/../config/config_' . ENV . '.php';
         }
         
